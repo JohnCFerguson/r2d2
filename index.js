@@ -20,10 +20,8 @@ console.log(
 }*/
 
 const run = async () => {
-    project.createLocalProject();
+    const projDir = project.createLocalProject();
 }
-
-run();
 
 const runGithub = async () => {
     let token = github.getStoredGithubToken();
@@ -32,4 +30,7 @@ const runGithub = async () => {
     }
 
     console.log(token)
+    run();
 }
+
+runGithub();

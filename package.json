@@ -2,13 +2,16 @@
   "name": "r2d2",
   "version": "1.0.0",
   "main": "index.js",
-  "bin": "./index.js",
+  "bin": {
+    "r2d2": "./index.js"
+  },
   "license": "MIT",
   "description": "tool to create folders, init projects, push to git",
   "author": "John C Ferguson",
   "private": true,
   "dependencies": {
-    "@octokit/auth-basic": "^1.4.6",
+    "@octokit/auth-app": "^2.10.5",
+    "@octokit/auth-basic": "^1.4.8",
     "@octokit/rest": "^18.0.5",
     "chalk": "^4.1.0",
     "child_process": "^1.0.2",
